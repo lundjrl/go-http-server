@@ -1,0 +1,18 @@
+{
+  "go.formatTool": "goimports",
+  "go.toolsManagement.autoUpdate": true,
+  "go.vetOnSave": "package",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  }
+}
