@@ -13,6 +13,5 @@ func main() {
 		return c.Status(200).JSON(fiber.Map{"message": "pong"})
 	})
 
-	log.Fatal(app.Listen(":4001"))
-
+	log.Fatal(app.Listen(":6660")) // ENV in GO? Shared ENV for docker and here?
 }

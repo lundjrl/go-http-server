@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  http-server:
+    build: .
+    image: hot-reload-http-server
+    ports:
+      - '6660:6660'
+    volumes:
+      - ./:/app
+    environment:
+      PORT: '6660'
