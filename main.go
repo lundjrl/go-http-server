@@ -2,15 +2,17 @@ package main
 
 import (
 	"log"
-
+	
 	"github.com/gofiber/fiber/v2"
+	"github.com/lundjrl/go-http-server/internal"
 )
 
 func main() {
 	app := fiber.New()
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		msg := fiber.Map{"message": "still here!"}
+		str := internal.Test()
+		msg := fiber.Map{"message": "still here!", "huh": str}
 		return c.Status(200).JSON(msg)
 	})
 
