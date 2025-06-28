@@ -3,6 +3,8 @@ FROM golang:latest
 RUN mkdir /app
 WORKDIR /app
 
+ENV TERM=xterm-256color
+ENV COLORTERM=truecolor
 ENV GO111MODULE=on
 
 RUN go install github.com/githubnemo/CompileDaemon@latest

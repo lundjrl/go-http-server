@@ -14,5 +14,6 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always"
     }
-  }
+  },
+  "cSpell.words": ["charmbracelet", "gofiber", "gorm", "lundjrl"]
 }
