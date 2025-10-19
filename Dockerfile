@@ -1,16 +1,11 @@
-FROM golang:latest
+FROM golang:alpine
 
 RUN mkdir /app
 WORKDIR /app
 
-ENV TERM=xterm-256color
-ENV COLORTERM=truecolor
-ENV GO111MODULE=on
-
-RUN go install github.com/githubnemo/CompileDaemon@latest
-
 ADD . /app
 
-RUN go install github.com/gofiber/fiber/v2
+RUN go mod tidy
+RUN go build main.go
 
-ENTRYPOINT CompileDaemon --build="go build main.go" --command=./main
+ENTRYPOINT ["main"]

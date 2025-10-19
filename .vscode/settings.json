@@ -15,5 +15,13 @@
       "source.organizeImports": "always"
     }
   },
-  "cSpell.words": ["charmbracelet", "gofiber", "gorm", "lundjrl"]
+  "cSpell.words": [
+    "charmbracelet",
+    "COLORTERM",
+    "githubnemo",
+    "gofiber",
+    "gorm",
+    "lundjrl",
+    "truecolor"
+  ]
 }
