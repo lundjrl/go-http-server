@@ -1,5 +1,7 @@
 FROM golang:alpine
 
+RUN apk add build-base
+
 RUN mkdir /app
 WORKDIR /app
 
